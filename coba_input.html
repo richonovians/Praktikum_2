@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipe Input</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <label for="username"> type "text" :</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">type "password"</label><br>
+    <input type="password" id="pwd" name="pwd"><br>
+
+    <br>
+
+    <hr>
+    <h3>Uji coba 2</h3>
+    <input type="radio" id="html" value="HTML" name="CSS"> <label for="html">HTML</label><br>
+    <input type="radio" id="css" value="CSS" name="CSS"> <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" value="JavaScript" name="CSS"> <label for="javascript">JavaScript</label><br>
+    <p>Jadi kesimpulannya, jika kita mengisi atribut name dengan nilai sama, yang terjadi adalah kita hanya bisa memilih 1 dari 3 pilihan, karena dari 3 input tersebut memiliki 1 name yang sama.
+        Dan jika kita mengisi atribut name dengan nilai yang berbeda, yang terjadi adalah kita bisa memilih semua, karena setiap input mempunyai name masing-masing.
+    </p>
+
+    <hr>
+    <h3>Uji coba 3</h3>
+    <input type="checkbox" id="id1" value="Bike" name="id1">
+    <label for="id1"> I have a bike</label><br>
+    <input type="checkbox" id="id2" value="Car" name="id2">
+    <label for="id2"> I have a car </label><br>
+    <input type="checkbox" id="id3" value="Boat" name="id3">
+    <label for="id3"> I have a boat </label><br>
+    <p>Jadi kesimpulannya, dari 3 input checkbox tersebut ketika kita mengisi name dengan nilai sama, maka hasilnya tetap bisa memilih lebih dari satu pilihan atau tidak memilih sama sekali,
+        karena input tersebut bertype checkbox. Dan juga pada label for yang di tuju bukan atribut name, melainkan pada atribut id.
+    </p>
+
+    <hr>
+    <h3>Uji coba 4</h3>
+    <label for="favcolor">Pilih warna dengan type="color":</label>
+    <input type="color" id="favcolor" name="favcolor"><br>
+    <label for="b">Pilih tanggal dengan type="date":</label>
+    <input type="date" name="tanggal" id="b"><br>
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!"> <br>
+    <p><ol>
+        <li>Pada input type color berfungsi untuk menginput warna dengan hexa, RGB dan HSL</li>
+        <li>Pada input type date berfungsi untuk menginput tanggal, bulan dan tahun.</li>
+        <li>Pada input type button adalah untuk menambah tombol yang berfungsi untuk alert/warning.</li>
+    </ol></p>
+
+    <hr>
+    <h3>Uji coba 5</h3>
+    <label for="birthdaytime">Input dengan type datetime-local:</label>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+    <label for="bdaymonth">Input dengan type month:</label>
+    <input type="month" id="bdaymonth" name="bdaymonth"><br>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br>
+    <p><ol>
+        <li>Pada input type datetime-local berfungsi untuk menginput tanggal, bulan, tahun serta jam dengan format yyyy-mm-ddThh:mm.</li>
+        <li>Pada input type month berfungsi untuk menginput bulan dan tahun dengan format yyyy-mm.</li>
+        <li>Pada input type email adalah input text, namun informasi yang dimasukkan haruslah dalam format email. Jika format email tidak benar, secara otomatis form tidak akan bisa di submit.</li>
+    </ol></p>
+
+    <hr>
+    <h3>Uji coba 6</h3>
+    <input type="image" src="gambar/icon.png" alt="Submit" width="48" height="48"><br>
+    <label for="mylife">Pilih file:</label>
+    <input type="file" id="mylife" name="mylife"><br>
+    <input type="hidden" id="custId" name="custId" value="3487"><br>
+    <p><ol>
+        <li>Pada input data type image bukan digunakan untuk input berupa berkas gambar, melainkan digunakan untuk membuat tombol submit namun berupa gambar.</li>
+        <li>Pada input type file digunakan untuk mengupload berkas file apapun, seperti pdf, jpg, png, dll.</li>
+        <li>Input type hidden artinya input datanya tidak terlihat oleh pengguna web. Biasanya input data hidden memang tidak dimaksudkan untuk diinputkan oleh pengguna,
+            biasanya pada kasus-kasus tertentu input data hidden digunakan untuk informasi yang dibuat secara otomatis oleh web kita, dan tidak butuh diubah dan dilihat oleh pengguna.</li>
+    </ol>
+    </p>
+
+    <hr>
+    <h3>Uji coba 7</h3>
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="-50" max="10"><br>
+    <label for="vol">Volume (between 0 and 50):</label>
+    <input type="range" id="vol" name="vol" min="0" max="50"><br>
+    <p><ol>
+        <li>Pada input type number berguna untuk input number atau angka.</li>
+        <li>Input data type range adalah input untuk number/angka namun ditentukan jangkauan minimal dan minimalnya.
+            Ini mirip seperti input number, yang membedakannya adalah bentuk komponen inputnya tidak seperti input text, 
+            melainkan dalam bentuk slider, yang bisa di slide ke kiri untuk menurunkan nilai dan ke kanan untuk menaikkan nilai. 
+            Secara default, nilai range naik bertahap +1 atau berkurang -1. Jika kita ingin mengubah, kita bisa tambahkan atribut step.</li>
+        <li>Atribut min dan max untuk mengatur berapa nilai minimal dan nilai maximal data yang diinputkan.</li>
+    </ol></p>
+
+    <hr>
+    <h3>Uji coba 8</h3>
+    <label for="homepage">Add your homepage:</label>
+    <input type="url" id="homepage" name="homepage"><br>
+    <label for="gsearch">Search Google:</label>
+    <input type="search" id="gsearch" name="gsearch"><br>
+    <label for="ph">Enter your phone number:</label>
+    <input type="tel" id="ph" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+    <p><ol>
+        <li>Input type URL digunakan untuk menerima input data dalam bentuk URL, seperti alamat website pribadi, website social media, dan lain-lain. 
+            Jika format URL tidak valid, maka HTML tidak akan menerima input data URL tersebut.</li>
+        <li>Input type search digunakan untuk memungkinkan pengguna memasukkan teks pendek yang akan digunakan sebagai parameter dalam operasi pencarian.</li>
+        <li>Input type tel bisa digunakan untuk input informasi telepon. Namun berbeda dengan input email atau number, aturan di input tel harus kita tentukan sendiri, hal ini karena format telepon di tiap negara berbeda-beda. 
+            Kita bisa mengubah aturan format nomor telepon menggunakan atribut pattern, dimana isinya harus berisi Regular Expressions.</li>
+    </ol></p>
+
+    <hr>
+    <h3>Uji coba 9</h3>    
+    <label for="appt">Select a time:</label>
+    <input type="time" id="appt" name="appt"><br>
+    <label for="week">Select a week:</label>
+    <input type="week" id="week" name="week"><br>
+    <p><ol>
+        <li>Input type time digunakan untuk informasi jam dan menit dengan format hh:mm. Untuk membatasi minimal dan maksimal waktu yang dipilih, kita bisa gunakan atribut min dan max.</li>
+        <li>Input type week digunakan untuk menerima input minggu dalam satu tahun. Total minggu dalam satu tahun berkisar antara 52-53, artinya itu adalah maksimal nilai untuk week. 
+            Format penulisan week bisa menggunakan pola yyyy-Www. Untuk membatasi minimal dan maksimal kita juga bisa gunakan atribut min dan max.</li>
+    </ol></p>
+    
+</body>
+</html>

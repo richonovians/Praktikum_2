@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sederhana</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="/action_page.php" target="_top" method="post">
+        <label for="depan">Nama depan:</label><br>
+        <input type="text" id="depan" name="i_name" value="Budi"><br>
+        <label for="n_belakang">Nama belakang:</label><br>
+        <input type="text" id="n_belakang" name="i_belakang" value="Prawira"><br><br>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+    <p>Jika Anda mengklik tombol "Kirim", data formulir akan dikirim ke halaman bernama
+        "/action_page.php".</p>
+    <p><ol>
+        <li>Pada method get saat kita melakukan submit, data yang dikirim akan terlihat di query parameter, sedangkan method post data yang dikirim tidak akan 
+        terlihat di query parameter, namun kita bisa lihat data tersebut dikirim melalui dev tools.</li>
+        <li>Atribut target _blank untuk membuka tab baru, _self untuk membuka di halaman itu sendiri, _parent untuk membuka dalam bingkai induk, _top untuk membuka tautan dalam seluruh area jendela.</li>
+    </p>
+    
+</body>
+</html>
